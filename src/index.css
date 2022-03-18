@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+a {
+  color: black !important;
+  text-decoration: none !important;
+}
+
+.app {
+  padding: 20px 0;
+}
+
+.wrap {
+  width: 500px;
+
+  margin: 0 auto;
+  text-align: center;
+}
+
+.content {
+  width: 100%;
+  padding: 10px;
+}
+
+.todo-list {
+  border: 1px solid #e0e0e0;
+  padding: 0px;
+  margin-bottom: 15px;
+}
+
+.todo-input {
+  width: 75%;
+}
+
+.row {
+  border: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todoBox {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.inactive {
+  width: 100%;
+  height: 100px;
+  text-decoration: none;
+}
+
+.active {
+  background: #e0e0e0;
+  text-decoration: none;
+}
+
+.btn .btn-secondary {
+  border-top: 20px;
+}
+
+.completeTodo {
+  color: #d4d4d4;
+}
+
+.formTodo {
+  display: flex;
+  height: 30px;
+  align-items: center;
+  padding: 30px;
+}
+
+.todo-button {
+  margin-left: 10px;
+  width: 20%;
+  background-color: #d4d4d4;
+  border-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: not-allowed;
+}
+
+.loader {
+  border: 5px solid #f3f3f3;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+  border-top: 5px solid #555;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
